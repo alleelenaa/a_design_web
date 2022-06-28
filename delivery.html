@@ -1,0 +1,218 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+	<head>
+		<title>About - Alla Design</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="style.css"> 
+		<script src="https://kit.fontawesome.com/e8fcdaff75.js" crossorigin="anonymous"></script>
+	</head>
+	
+	<body>
+		<header>
+			<table>
+				<tr>
+					<th> <a href="logincss.html" class="aheader">Women</a> </th>
+					<th> <a href="men.html" class="aheader">Men</a> </th>
+					<th> <a href="Kids.html" class="aheader">Kids</a> </th>
+					<th> <a href="home.html" class="aheader">Home</a> </th>
+				</tr>
+			</table>
+		</header>
+		
+		<div class="site-navbar">
+		    <div class="navbar">
+		        <div class="dropdown">
+		            <button href=#categorii class=navbar-dropdown-item>
+		            <i class="fa-solid fa-user"></i></button>
+		                <div class="dropdown-content">
+		                    <a href="logincss.html">LogIn</a>
+		                    <a href="signupcss.html">SignUp</a>
+                        </div>
+                </div>
+
+                <div class="dropdown">
+		            <button href=#categorii class=navbar-dropdown-item>PRODUCTS</button>
+		            <div class="dropdown-content">
+		                <a href="clothes.html">Clothes</a>
+                        <a href="shoes.html">Shoes</a>
+                        <a href="sport.html">Sport</a>
+                        <a href="accessories.html">Accessories</a>
+                        <a href="sale.html" style="color:red">SALE</a>
+                    </div>
+                </div>
+                
+                <a href="cart.html" class="navbar-item">
+                <i class="fa-regular fa-cart-arrow-down"></i> CART</a>
+                
+                <a href="favorites.html" class="navbar-item">
+                <i class="fa-solid fa-heart"></i></a>
+                
+		        <div class="dropdown">
+		            <button href=#categorii class=navbar-dropdown-item>ABOUT</button>
+		            <div class="dropdown-content">
+		                <a href="about.html">About us</a>
+                        <a href="contact.html"><i class="fa fa-envelope"></i> Contact</a>
+                        <a href="faq.html">FAQ</a>
+                        <a href="delivery.html"><i class="fa-solid fa-truck"></i> Delivery details</a>
+                        <a href="order.html">How to order</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="navbar-home">
+                <a href="mypage_5.html" class="navbar-item">
+                <i class="fa-regular fa-house"></i></a>
+            </div>
+        </div>
+
+		<section>
+		    <div class="logo">
+		        <a href="mypage_5.html" class="alogo">
+				    <img src="logo.png" alt="Logo" class="logoimage">
+				</a>
+			</div>
+			<h1 id="logoname"> Alla Design </h1>
+
+			<blockquote>
+			    <i class="fa-solid fa-quote-left fa-2x"></i>
+				Nothing makes a woman more <strong> beautiful </strong> than the <strong> belief than she is beautiful </strong>.
+				<i class="fa-solid fa-quote-right fa-2x"></i>
+				-Sofia Loren
+			</blockquote>
+		</section>
+
+		<main>
+		
+			<article>
+				<h2><i class="fa-solid fa-truck"></i> Our Partners </h2>
+		        
+				<ul class="delivery-partners">
+					<li>Cargus<span id="dots">...</span>
+						<span id="more">
+							<ul class="delivery-details">
+								<li>Web page: <a href="https://www.cargus.ro">cargus.ro</a></li>
+								<li>Delivery cost: 20 ron</li>
+								<li>Delivery time: 2-4 days</li>
+							</ul>
+						</span>
+						
+						<button onclick="myFunction()" id="myBtn">Read more</button>
+					</li>
+					
+					<li>DHL Express<span id="dots">...</span>
+						<span id="more">
+							<ul class="delivery-details">
+								<li>Web page: <a href="https://www.dhl.com/ro-ro/home.html">dhl.com</a></li>
+								<li>Delivery cost: 25 ron</li>
+								<li>Delivery time: 2-3 days</li>
+							</ul>
+						</span>
+						
+						<button onclick="myFunction()" id="myBtn">Read more</button>
+					</li>
+					
+					<li>Transilvania Post<span id="dots">...</span>
+						<span id="more">
+							<ul class="delivery-details">
+								<li>Web page: <a href="https://www.transilvaniapost.ro">transilvaniapost.ro</a></li>
+								<li>Delivery cost: 18 ron</li>
+								<li>Delivery time: 3-5 days</li>
+							</ul>
+						</span>
+						
+						<button onclick="myFunction()" id="myBtn">Read more</button>
+					</li>
+					
+					<li>Fan Courier Express<span id="dots">...</span>
+						<span id="more">
+							<ul class="delivery-details">
+								<li>Web page: <a href="https://www.fancourier.ro">fancourier.ro</a></li>
+								<li>Delivery cost: 19 ron</li>
+								<li>Delivery time: 2-5 days</li>
+							</ul>
+						</span>
+						
+						<button onclick="myFunction()" id="myBtn">Read more</button>
+					</li>
+				</ul>
+				
+				<script>
+					function myFunction() {
+						var dots = document.getElementById("dots");
+						var moreText = document.getElementById("more");
+						var btnText = document.getElementById("myBtn");
+						
+						if (dots.style.display === "none") {
+							dots.style.display = "inline";
+							btnText.innerHTML = "Read more"; 
+							moreText.style.display = "none";
+						}
+						else {
+							dots.style.display = "none";
+							btnText.innerHTML = "Read less"; 
+							moreText.style.display = "inline";
+						}
+					}
+				</script>
+			</article>
+
+		    <br><br>
+		    
+		    <article>
+		    	<div id="whats-new">
+        			<button class="button-list"><i class='fas fa-angle-left'></i></button>
+        			
+        			<ol id="appear-list" >
+          				<li class="shown-el">
+            				<div>
+            					Culoarea anului 2022
+            					<a class="read-more" href="https://catine.ro/pantone-a-numit-very-peri-culoarea-anului-2022-ce-simbolizeaza-nuanta-aleasa-57261.html">Citește mai multe</a>
+            				</div>
+          				</li>
+          				
+          				<li>
+          					<div>
+          						Tendințe modă primăvară-vară: Franjuri peste tot
+            					<a class="read-more" href="https://www.elle.ro/fashion/tendinte-moda-primavara-vara-franjuri-peste-tot-834320">Citește mai multe</a>
+            				</div>
+          				</li>
+          				
+          				<li>
+          					<div>
+          						Chop, chop! Iată cea mai populară tunsoare a sezonului
+              					<a class="read-more" href="https://www.elle.ro/beauty/chop-chop-iata-cea-mai-populara-tunsoare-a-sezonului-827996">Citește mai multe</a>
+            				</div>
+          				</li>
+          				
+          				<li>
+          					<div>
+          						Power blazer, trend-ul fashion al momentului
+          						<a class="read-more" href="https://www.elle.ro/fashion/power-blazer-trend-ul-fashion-al-momentului-831584">Citește mai multe</a>
+          					</div>
+          				</li>
+          				
+          				<li>
+          					<div>
+          						Fashion trend: Noua Șeherezada
+          						<a class="read-more" href="https://www.elle.ro/fashion/fashion-trend-noua-seherezada-832377">Citește mai multe</a>
+          					</div>
+          				</li>
+          			</ol>
+          			
+          			<button class="button-list"><i class='fas fa-angle-right'></i></button>
+          		</div>
+          		
+          		<script src="carusel.js"></script>
+		    </article>
+		
+		</main>
+
+		<footer>
+			<span style='color:white'>&copy; <strong>Alexandra-Elena Pribagu</strong></span>
+		</footer> 
+
+	</body>
+
+</html>

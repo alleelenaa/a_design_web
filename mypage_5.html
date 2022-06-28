@@ -1,0 +1,296 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+	<head>
+		<title>Alla Design</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="style.css"> 
+		<script src="https://kit.fontawesome.com/e8fcdaff75.js" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+	</head>
+	
+	<body>
+		<header>
+			<table>
+				<tr>
+					<th> <a href="logincss.html" class="aheader">Women</a> </th>
+					<th> <a href="men.html" class="aheader">Men</a> </th>
+					<th> <a href="Kids.html" class="aheader">Kids</a> </th>
+					<th> <a href="home.html" class="aheader">Home</a> </th>
+				</tr>
+			</table>
+		</header>
+		
+		<div class="site-navbar">
+		    <div class="navbar">
+		        <div class="dropdown">
+		            <button href=#categorii class=navbar-dropdown-item>
+		            <i class="fa-solid fa-user"></i></button>
+		                <div class="dropdown-content">
+		                    <a href="logincss.html">LogIn</a>
+		                    <a href="signupcss.html">SignUp</a>
+                        </div>
+                </div>
+
+                <div class="dropdown">
+		            <button href=#categorii class=navbar-dropdown-item>PRODUCTS</button>
+		            <div class="dropdown-content">
+		                <a href="clothes.html">Clothes</a>
+                        <a href="shoes.html">Shoes</a>
+                        <a href="sport.html">Sport</a>
+                        <a href="accessories.html">Accessories</a>
+                        <a href="sale.html" style="color:red">SALE</a>
+                    </div>
+                </div>
+                
+                <a href="cart.html" class="navbar-item">
+                <i class="fa-regular fa-cart-arrow-down"></i> CART</a>
+                
+                <a href="favorites.html" class="navbar-item">
+                <i class="fa-solid fa-heart"></i></a>
+                
+		        <div class="dropdown">
+		            <button href=#categorii class=navbar-dropdown-item>ABOUT</button>
+		            <div class="dropdown-content">
+		                <a href="about.html">About us</a>
+                        <a href="contact.html"><i class="fa fa-envelope"></i> Contact</a>
+                        <a href="faq.html">FAQ</a>
+                        <a href="delivery.html"><i class="fa-solid fa-truck"></i> Delivery details</a>
+                        <a href="order.html">How to order</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="navbar-home">
+                <a href="mypage_5.html" class="navbar-item">
+                <i class="fa-regular fa-house"></i></a>
+            </div>
+        </div>
+
+		<section>
+		    <div class="logo">
+		        <a href="mypage_5.html" class="alogo">
+				    <img src="logo.png" alt="Logo" class="logoimage">
+				</a>
+			</div>
+			<h1 id="logoname"> Alla Design </h1>
+
+			<blockquote>
+			    <i class="fa-solid fa-quote-left fa-2x"></i>
+				Nothing makes a woman more <strong> beautiful </strong> than the <strong> belief than she is beautiful </strong>.
+				<i class="fa-solid fa-quote-right fa-2x"></i>
+				-Sofia Loren
+			</blockquote>
+		</section>
+
+		<main>
+			<artcle>
+				<div>
+				<input type="text" class="live-search-box" id="live-search-box" placeholder="search here" />
+				<ul class="live-search-list" id="live-search-list">
+					<li>Dress</li>
+					<li>Top</li>
+					<li>Skirt</li>
+					<li>Denim</li>
+					<li>Jacket</li>
+					<li>Bodysuit</li>
+				</ul>
+				</div>
+				
+				<script src="live_search.js">
+					jQuery(document).ready(function($){
+						$('.live-search-list li').each(function(){
+							$(this).attr('data-search-term', $(this).text().toLowerCase());
+						});
+					
+						$('.live-search-box').on('keyup', function(){
+							var searchTerm = $(this).val().toLowerCase();
+							$('.live-search-list li').each(function(){
+								if ($(this).filter('[data-search-term *= ' + searchTerm + ']').length > 0 || searchTerm.length < 1) {
+									$(this).show();
+								} 
+								else {
+            						$(this).hide();
+        						}
+        					});
+        				});
+        			});
+				</script>
+				
+			</article>
+			
+			<article>
+				<h2><i class="fa-regular fa-heart-pulse"></i> Inspiration </h2>
+				<div class="slideshow-container">
+					<div class="mySlides fade 1">
+						<img src="photo1.jpg" style="width:100%">
+					</div>				
+					<div class="mySlides fade 2">
+						<img src="photo2.jpg" style="width:100%">
+					</div>			
+					<div class="mySlides fade 3">
+						<img src="photo3.jpg" style="width:100%">
+					</div>				
+					<div class="mySlides fade 4">
+						<img src="photo4.jpg" style="width:100%">
+					</div>			
+					<div class="mySlides fade 5">
+						<img src="photo5.jpg" style="width:100%">
+					</div>			
+					<div class="mySlides fade 6">
+						<img src="photo6.jpg" style="width:100%">
+					</div>
+					<div class="mySlides fade 7">
+						<img src="photo7.jpg" style="width:100%">
+					</div>
+					<div class="mySlides fade 8">
+						<img src="photo8.png" style="width:100%">
+					</div>					
+					<div class="mySlides fade 9">
+						<img src="photo9.jpg" style="width:100%">
+					</div>					
+					<div class="mySlides fade 10">
+						<img src="photo10.jpg" style="width:100%">
+					</div>				
+					<div class="mySlides fade 11">
+						<img src="photo11.jpg" style="width:100%">
+					</div>
+				
+					<a class="prev" onclick="plusSlides(-1)">❮</a>
+            		<a class="next" onclick="plusSlides(1)">❯</a>
+
+                    <div class="row">
+                        <div class="column">
+                            <img class="demo cursor" src="photo1.jpg" style="width:50%" onclick="currentSlide(1)" alt="Outfit 1">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="photo2.jpg" style="width:50%" onclick="currentSlide(2)" alt="Outfit 2">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="photo3.jpg" style="width:48%" onclick="currentSlide(3)" alt="Outfit 3">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="photo4.jpg" style="width:42.65%" onclick="currentSlide(4)" alt="Outfit 4">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="photo5.jpg" style="width:36%" onclick="currentSlide(5)" alt="Outfit 5">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="photo6.jpg" style="width:41.3%" onclick="currentSlide(6)" alt="Outfit 6">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="photo7.jpg" style="width:37%" onclick="currentSlide(7)" alt="Outfit 7">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="photo8.png" style="width:44%" onclick="currentSlide(8)" alt="Outfit 8">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="photo9.jpg" style="width:65%" onclick="currentSlide(9)" alt="Outfit 9">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="photo10.jpg" style="width:65%" onclick="currentSlide(10)" alt="Outfit 10">
+                        </div>
+                    </div>
+                </div>
+				
+				<br>
+
+					<div style="text-align:center">
+  						<span class="dot"></span> 
+  						<span class="dot"></span> 
+  						<span class="dot"></span>
+  						<span class="dot"></span> 
+  						<span class="dot"></span> 
+  						<span class="dot"></span> 
+  						<span class="dot"></span> 
+  						<span class="dot"></span> 
+  						<span class="dot"></span>
+  						<span class="dot"></span> 
+  						<span class="dot"></span>
+					</div>
+				
+				<br>
+				<select class="timer" id="timer">
+					<option value="1000">1 sec</option>
+					<option value="2000">2 sec</option>
+					<option value="3000">3 sec</option>
+					<option value="4000">4 sec</option>
+					<option value="5000">5 sec</option>
+					<option value="60000">1 min</option>
+				</select>
+				
+				<input type="checkbox" id="myCheck" onclick="autoplay">
+				<label for="myCheck"><i class="fa-regular fa-play"></i></label>
+				
+				<script>
+					let slideIndex = 0;
+					showSlides();
+					
+					function showSlides() {
+						let i;
+						let slides = document.getElementsByClassName("mySlides");
+						let dots = document.getElementsByClassName("dot");
+						let timer = document.getElementById("timer").value;
+						for (i = 0; i < slides.length; i++) {
+							slides[i].style.display = "none";  
+						}
+						
+						slideIndex++;
+						if (slideIndex > slides.length) {
+							slideIndex = 1;
+						}
+						for (i = 0; i < dots.length; i++) {
+							dots[i].className = dots[i].className.replace(" active", "");
+						}
+						slides[slideIndex-1].style.display = "block";  
+  						dots[slideIndex-1].className += " active";
+  						setTimeout(showSlides, timer); // Change image every 2 seconds
+					}
+                </script>
+                
+                <!---
+                <script>
+                	let slideIndex = 1;
+                    showSlides(slideIndex);
+                    
+                    		function plusSlides(n) {
+                        		showSlides(slideIndex += n);
+                    		}
+
+                    		function currentSlide(n) {
+                        		showSlides(slideIndex = n);
+                    		}
+                    
+                    		function showSlides(n) {
+                        		let i;
+                        		let slides = document.getElementsByClassName("mySlides");
+                        		let dots = document.getElementsByClassName("demo");
+                        		if (n > slides.length) {slideIndex = 1}
+                        		if (n < 1) {slideIndex = slides.length}
+                        
+                        		for (i = 0; i < slides.length; i++) {
+                            		slides[i].style.display = "none";
+                        		}
+                        
+                       		 	for (i = 0; i < dots.length; i++) {
+                            		dots[i].className = dots[i].className.replace(" active", "");
+                        		}
+                        
+                        		slides[slideIndex-1].style.display = "block";
+                       		 	dots[slideIndex-1].className += " active";
+                    		}
+                </script>
+                --->
+			</article>
+			<br><br><br>
+		
+		</main>
+
+		<footer>
+			<span style='color:white'>&copy; <strong>Alexandra-Elena Pribagu</strong></span>
+		</footer> 
+
+	</body>
+
+</html>
